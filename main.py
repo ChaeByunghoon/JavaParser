@@ -27,14 +27,5 @@ for i in range(0, len(source_list)):
     except javalang.tokenizer.LexerError:
         print("Error")
         print(file_list[i])
-"""
-for code, path in (source_list, output_list):
-    visitor = IEEEVisitor(code)
-    try:
-        parsed_tree = visitor.parse_tree()
-        output_list.append(visitor.parse_tree())
-    except javalang.tokenizer.LexerError:
-        print("ERRor")
-        print(path)
-"""
+
 fc.file_out(fc.get_output_path_list(), output_list)

@@ -38,7 +38,8 @@ class FileController:
         for i in range(0, len(output_path_list)):
             f = open(output_path_list[i], "w")
             for j in range(0, len(node_list[i])):
-                print(node_list[i][j], file=f)
+                print(node_list[i][j], "@", str(j + 1), file=f)
+            print(output_path_list[i])
             f.close()
 
 
